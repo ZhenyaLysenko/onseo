@@ -2,6 +2,19 @@ import React, {Component} from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import style from './App.css';
 
+const Home = () => (
+  <div>
+    <h3>Home</h3>
+  </div>
+)
+
+const About = () => (
+  <div>
+    <h3>About</h3>
+  </div>
+)
+
+
 class App extends Component {
   render() {
     return (<BrowserRouter>
@@ -10,19 +23,17 @@ class App extends Component {
           {/*
           тут буде меню, лого і пошук. Оскільни на кожній сторінці вони не змінні.
           хотя на Home фон повинен покривати header хзхз
+
+          Щоб добавити лінк можна писати
+          <Link to="/about">About</Link>
           */
+
           }
         </header>
-        <h2>Hello</h2>
-        {/*
+
         <Route exact path="/" component={Home}/>
-        <Route path="/about" component={About}/>
-        <Route path="/contacts" component={Contacts}/>
-        <Route path="/how-we-do" component={HowWeDo}/>
-        <Route path="/vacancies" component={Vacancies}/>
-        <Route path="/who-trust-us" component={WhoTrustUs}/>
-        */
-        }
+        <Route exact path="/about" component={About}/>
+
       </div>
     </BrowserRouter>);
   }
