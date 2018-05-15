@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import WhatWeDo from "./WhatWeDo";
 import style from './App.css';
 
 class App extends Component {
@@ -14,7 +13,7 @@ class App extends Component {
           */
           }
         </header>
-
+        <h2>Hello</h2>
         {/*
         <Route exact path="/" component={Home}/>
         <Route path="/about" component={About}/>
