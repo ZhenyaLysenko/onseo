@@ -31,7 +31,7 @@ class App extends Component {
 
           }
         </header>
-
+        <Link to="/about">about</Link>
         <Route exact path="/" component={Home}/>
         <Route exact path="/about" component={WhatWeDo}/>
 
