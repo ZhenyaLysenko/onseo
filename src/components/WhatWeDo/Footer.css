@@ -1,0 +1,21 @@
+.flexConteiner {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.item {
+  flex: 433px;
+  min-width: 0;
+}
+
+i {
+  margin: 0 10px;
+}
+
+.text {
+  font-family: 'maison-neue', sans-serif;
+  font-size: 12px;
+  margin-right: 30px;
+}

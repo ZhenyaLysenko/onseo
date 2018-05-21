@@ -5,6 +5,13 @@
   top: 0;
 }
 
+img {
+  width: 100%;
+  max-width: 890px;
+  height: 100%;
+  max-height: 530px;
+}
+
 .cover {
   position: absolute;
   font-size: 180px;
@@ -13,5 +20,118 @@
 }
 
 .conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.sconteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:flex-start;
+}
+
+.title {
   position: relative;
+  font-size: 250pt;
+  color: #F4F4F4;
+  font-family: BebasNenuBold;
+}
+
+.frontTitle {
+  position: absolute;
+  top: 105px;
+  padding: 0 70px;
+  font-size: 60pt;
+  color: #00CDFF;
+  font-family: BebasNenuBold;
+}
+
+.left, .right {
+  flex: 1 870px;
+  min-width: 0;
+}
+
+.cleft, .cright {
+  flex: 1 440px;
+  min-width: 0;
+  margin-top: 144px;
+}
+
+.left {
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cright .proximaNova {
+  margin-top: 30px;
+}
+
+.space {
+  height: 225px;
+}
+
+.bebasNenuBold {
+  font-family: BebasNenuBold;
+}
+
+.proximaNova {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  float: right;
+  margin-right: 65px;
+}
+
+.icon4 {
+  height: 50px;
+  width: 70px;
+  float: right;
+  margin-right: 65px;
+}
+
+.font70 {
+  font-size: 70pt;
+}
+
+.font36 {
+  font-size: 36pt;
+}
+
+.font24 {
+  font-size: 24pt;
+}
+
+.font16 {
+  font-size: 16pt;
+}
+
+
+@font-face {
+  font-family: BebasNenuBold;
+  src: url(/../../public/fonts/TTFs/BebasNeueBold.ttf), url(/../../public/fonts/BebasNeueBold.otf);
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 140pt;
+  }
+  .cright {
+    flex: 1 200px;
+  }
+  .cleft {
+    flex: 1 70px;
+    min-width: 70px;
+  }
+  .font70 {
+    font-size: 45pt;
+  }
 }

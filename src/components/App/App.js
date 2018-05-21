@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
 import style from './App.css';
+import WhatWeDo from '../WhatWeDo/WhatWeDo'
 
 const Home = () => (
   <div>
@@ -32,7 +33,7 @@ class App extends Component {
         </header>
 
         <Route exact path="/" component={Home}/>
-        <Route exact path="/about" component={About}/>
+        <Route exact path="/about" component={WhatWeDo}/>
 
       </div>
     </BrowserRouter>);
