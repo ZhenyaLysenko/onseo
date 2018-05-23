@@ -1,5 +1,5 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-var path = require('path');
+const path = require('path');
 
 const htmlWebpackPlugin = new HtmlWebPackPlugin({
   template: "./public/index.html",
@@ -11,11 +11,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index_bundle.js',
-    publicPath: '/'
+    publicPath: ''
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
@@ -23,9 +22,12 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        use: [
-          {
+        test: /\.(png|jpg)$/,
+        loader: "url-loader?name=images/[name].[ext]"
+      },
+      {
+        test: /\.(css|scss)$/,
+        use: [{
             loader: "style-loader"
           },
           {
@@ -37,12 +39,19 @@ module.exports = {
               sourceMap: true,
               minimize: true
             }
+          },
+          {
+            loader: "sass-loader"
           }
         ]
       },
       {
-        test: /\.(png|jpg)$/,
-        loader: 'url-loader'
+        test: /\.(ttf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: "url-loader",
+        options: {
+          name: "fonts/[name].[ext]",
+          limit: 100000
+        }
       }
     ]
   },

@@ -1,8 +1,21 @@
-img {
-  width: 100%;
-  max-width: 890px;
-  height: 100%;
-  max-height: 530px;
+.size1 {
+  font-size: 5.15vmax;
+}
+
+.size2 {
+  font-size: 2.08vmax;
+}
+
+.size3 {
+  font-size: 1.45vmax;
+}
+
+.size4 {
+  font-size: 1.25vmax;
+}
+
+.size5 {
+  font-size: 1.14vmax;
 }
 
 .conteiner {
@@ -11,6 +24,13 @@ img {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+
+.content {
+  padding: 0 70px;
+}
+
+.contentImg {
   padding: 0 70px;
 }
 
@@ -23,12 +43,12 @@ img {
 }
 
 .left, .right {
-  flex: 1 870px;
+  flex: 1 570px;
   min-width: 0;
 }
 
-.cleft, .cright {
-  flex: 1 440px;
+.cleftMenu, .crightMenu {
+  flex: 0 1 50%;
   min-width: 0;
 }
 
@@ -42,57 +62,159 @@ img {
 }
 
 .customWorkTitle {
-  font-size: 70pt;
+  flex: 0 0 100%;
   font-family: BebasNenuBold;
+  text-align: right;
 }
 
 .customWorkSubTitle {
-  font-size: 24pt;
+  flex: 0 1 50%;
   font-family: 'proxima-nova', sans-serif;
+  line-height: 170%;
+  font-weight: bold;
   text-align: right;
-  margin: 20px 0px;
+  margin-bottom: 35px;
+}
+.flexSpace50 {
+  flex: 0 1 50%;
+}
+
+.flexNoWrap {
+  flex: 0 1 100%;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .customWorkPartLeft {
-  font-size: 30pt;
   font-family: BebasNenuBold;
   text-align: right;
 }
 
 .customWorkPartRight {
-  font-size: 30pt;
   font-family: BebasNenuBold;
   padding-left: 68px;
 }
 
 .backButton {
+  flex: 0 1 50%;
   text-align: left;
-  padding-left: 60px;
+  padding-left: 70px;
+  padding-top: 20px;
   font-family: BebasNenuBold;
+  font-size: 0.8vmax;
 }
 
 .nextButton {
+  flex: 0 1 50%;
   text-align: right;
-  padding-right: 60px;
+  padding-right: 40px;
   padding-top: 35px;
   font-family: BebasNenuBold;
+  font-size: 0.8vmax;
+}
+
+.backButton:hover {
+  color: #00CDFF;
+}
+
+.nextButton:hover {
+  color: #00CDFF;
+}
+
+.topTitle {
+  font-family: BebasNenuBold;
+  display: none;
 }
 
 .active {
   color: #00CDFF;
 }
 
-@font-face {
-  font-family: BebasNenuBold;
-  src: url(/../../public/fonts/TTFs/BebasNeueBold.ttf), url(/../../public/fonts/BebasNeueBold.otf);
+@media (min-width: 740px) and (max-width: 1199px) {
+  .cleftMenu {
+    flex: 0 1 45%;
+    min-width: 0;
+  }
+  .crightMenu {
+    flex: 0 1 55%;
+    min-width: 0;
+  }
+  .content {
+    padding: 0 45px;
+  }
+  .contentImg {
+    padding: 0;
+  }
+  .backButton {
+    padding-left: 45px;
+    padding-top: 10px;
+    font-size: 1.2vmax;
+  }
+
+  .nextButton {
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 1.2vmax;
+  }
+  .customWorkPartLeft{
+    text-align: left;
+  }
+
+  .customWorkTitle {
+    font-size: 45px;
+    display: none;
+  }
+  .customWorkSubTitle{
+    margin: 30px 0;
+    text-align: left;
+  }
+  .customWorkPartRight {
+    text-align: left;
+  }
+  .topTitle {
+    display: block;
+  }
 }
 
-@media screen and (max-width: 1024px) {
-  .cleft, .cright {
-    flex: 1 300px;
-    min-width: 0;
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 0 25px;
+  }
+
+  .size3 {
+    font-size: 1.7vmax;
+  }
+
+  .contentImg {
+    padding: 0;
   }
   .customWorkTitle {
     font-size: 45px;
+    display: none;
+  }
+  .cleftMenu, .crightMenu {
+    display: none;
+  }
+  .backButton {
+    padding-left: 45px;
+    padding-top: 10px;
+    font-size: 1.5vmax;
+  }
+
+  .nextButton {
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 1.5vmax;
+  }
+  .customWorkSubTitle {
+    margin: 30px 0;
+    text-align: left;
+    flex: 0 1 100%;
+  }
+  .flexSpace50 {
+    display: none;
+  }
+  .topTitle {
+    display: block;
   }
 }

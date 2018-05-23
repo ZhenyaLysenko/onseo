@@ -5,6 +5,7 @@ import style from './App.css';
 import Header from '../header/Header';
 import WhatWeDo from '../WhatWeDo/WhatWeDo'
 import Home from '../Home/Home';
+import fontStyle from './Fonts.scss';
 
 class App extends Component {
   render() {
