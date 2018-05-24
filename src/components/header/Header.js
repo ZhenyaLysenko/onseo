@@ -4,7 +4,6 @@ import Popup from 'reactjs-popup';
 import style from './Header.css';
 import WhatWeDo from '../WhatWeDo/WhatWeDo';
 
-
 const contentStyle = {
   background: "rgba(255,255,255,0.6)",
   borderRadius: "0 10px 10px 0",
@@ -53,7 +52,7 @@ class Header extends Component {
       <div className={style.AppHeader}>
       <div className="row">
             <div className="col-4">
-                <Popup modal contentStyle={contentStyle} closeOnDocumentClick={true} 
+                <Popup modal contentStyle={contentStyle} closeOnDocumentClick={true}
                   trigger={ open =>
                     <div className={open ? style.burgerMenuOpen : style.burgerMenu }>
                       <div className={style.bar1} key="b1" />
@@ -61,7 +60,7 @@ class Header extends Component {
                       <div className={style.bar3} key="b3" />
                     </div>
                   }>
-                  {close => 
+                  {close =>
                     <div className={style.menu}>
                       <ul>
                           <li onClick={close}>
@@ -88,8 +87,8 @@ class Header extends Component {
                               <Link to="/">Vacancies</Link>
                           </li>
                           <hr />
-                          <li>
-                              <Link to="/">Contacts</Link>
+                          <li onClick={close}>
+                              <Link to="/Contacts">Contacts</Link>
                           </li>
                           <hr />
                       </ul>
@@ -108,7 +107,7 @@ class Header extends Component {
             </div>
             <div className="col-3">
               <div >
-              {this.state.search ? 
+              {this.state.search ?
                     (
                       <div>
                         <a onClick={this.handleSearch}>
@@ -116,13 +115,13 @@ class Header extends Component {
                         </a>
                         <input onChange={this.handleChange} className={style.SearchField} value={this.state.value} type="text" placeholder="Search..." />
                       </div>
-                    ) : 
+                    ) :
                     (
                       null
                     )
                   }
             </div>
-          </div>      
+          </div>
         </div>
       </div>);
   }
