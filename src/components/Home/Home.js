@@ -8,8 +8,8 @@ class Home extends Component {
         return(
             <div className={style.background}>
                 <div className={style.content}>
-                    <h1 className={style.blueText}>THE GAMES ARE </h1>
-                    <h1 className={style.whiteText}>OUR BUSINESS</h1>
+                    <span className={style.blueText}>THE GAMES ARE </span><br />
+                    <span className={style.whiteText}>OUR BUSINESS</span>
                 </div>
             </div>
         );

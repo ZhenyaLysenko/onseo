@@ -6,10 +6,21 @@ import Header from '../header/Header';
 import WhatWeDo from '../WhatWeDo/WhatWeDo'
 import Home from '../Home/Home';
 import Contacts from '../Contacts/Contacts';
+import { injectGlobal } from 'styled-components';
+import myFont from '../../../public/fonts/BebasNenueBold.ttf';
+
+injectGlobal`
+  @font-face {
+    font-family: 'BebasNenuBold';
+    src: url(${myFont}) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+`;
 
 class App extends Component {
   render() {
-    return (<BrowserRouter>
+    return (
       <div>
         <header>
           <Header></Header>
@@ -19,7 +30,7 @@ class App extends Component {
         <Route path="/contacts" component={Contacts}/>
 
       </div>
-    </BrowserRouter>);
+    );
   }
 }
 

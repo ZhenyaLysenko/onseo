@@ -1,38 +1,34 @@
 .background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
     background: url(../../../public/home/Home.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-     background-size: cover;
-    height: 730px;
-}
-@font-face {
-    font-family: BebasNenuBold;
-    src: url(/../../public/fonts/TTFs/BebasNeueBold.ttf), url(/../../public/fonts/BebasNeueBold.otf);
-  }
-html, body {
-    height: 100%;
+    background-size: cover;
+
 }
 .content {
     position: absolute;
     margin-left: 50px;
-    margin-top: 40%;
+    top: 70%;
 }
 .whiteText {
     color: white;
     font-family: BebasNeueBold;
-    font-size: 3.5em;
+    font-size: 30pt;
 }
 .blueText {
+    font-size: 25pt;
     color: aqua;
+    font-family: BebasNeueBold;
 }
-@media screen and (max-width: 720px) {
-    .background {
-        height: 400px;
+@media screen and (min-width: 960px) {
+    .blueText {
+        font-size: 35pt;
     }
-}
-@media screen and (max-width: 960px) {
-    .background {
-        height: 500px;
+    .whiteText {
+        font-size: 50pt;
     }
 }
