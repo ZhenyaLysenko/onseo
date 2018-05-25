@@ -25,7 +25,6 @@ html, body {
 }
 .blueText {
     color: aqua;
-    font-family: BebasNeue Regular;
 }
 @media screen and (max-width: 720px) {
     .background {
