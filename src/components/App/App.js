@@ -15,7 +15,7 @@ class App extends Component {
           <Header></Header>
         </header>
         <Route exact path="/" component={Home}/>
-        <Route path="/about" component={WhatWeDo}/>
+        <Route path="/WhatWeDo" component={WhatWeDo}/>
         <Route path="/contacts" component={Contacts}/>
 
       </div>
