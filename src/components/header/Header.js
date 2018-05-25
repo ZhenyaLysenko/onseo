@@ -63,27 +63,27 @@ class Header extends Component {
                   {close =>
                     <div className={style.menu}>
                       <ul>
-                          <li onClick={close}>
+                      <li onClick={close}>
                               <Link to="/">Home</Link>
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/about">About</Link>
+                              <Link to="/">About</Link>
                           </li>
                           <hr />
-                          <li>
-                              <Link to="/">What we do</Link>
+                          <li onClick={close}>
+                              <Link to="/WhatWeDo">What we do</Link>
                           </li>
                           <hr />
-                          <li>
-                              <Link to="/">How we do</Link>
+                          <li onClick={close}>
+                              <Link to="/HowWeDo">How we do</Link>
                           </li>
                           <hr />
-                          <li>
+                          <li onClick={close}>
                               <Link to="/">Who trust us</Link>
                           </li>
                           <hr />
-                          <li>
+                          <li onClick={close}>
                               <Link to="/">Vacancies</Link>
                           </li>
                           <hr />
