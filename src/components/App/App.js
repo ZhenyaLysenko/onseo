@@ -7,7 +7,7 @@ import WhatWeDo from '../WhatWeDo/WhatWeDo'
 import Home from '../Home/Home';
 import Contacts from '../Contacts/Contacts';
 import { injectGlobal } from 'styled-components';
-import myFont from '../../../public/fonts/BebasNenueBold.ttf';
+import myFont from '../../../public/fonts/BebasNeueBold.ttf';
 
 injectGlobal`
   @font-face {
