@@ -1,0 +1,115 @@
+.size1 {
+  font-size: 5.15vmax;
+}
+
+.size2 {
+  font-size: 1.35vmax;
+}
+
+.size3 {
+  font-size: 1.00vmax;
+}
+
+.font250 {
+  position: absolute;
+  font-size: 17.14VW;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content {
+  padding: 0 70px;
+}
+
+.title {
+  position: relative;
+  color: #F4F4F4;
+  font-family: BebasNenuBold;
+}
+
+.frontTitle {
+  position: absolute;
+  top: 95px;
+  color: #00CDFF;
+}
+
+.frontCentr {
+  position: absolute;
+  color: black;
+  top: 265px;
+  font-family: proxima-nova, sans-serif;
+  font-weight: bold;
+}
+
+.frontBotton {
+  position: absolute;
+  color: black;
+  top: 350px;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: bold;
+}
+
+
+@media (min-width: 740px) and (max-width: 1199px) {
+  .frontTitle {
+    top: 35px;
+  }
+  .size2 {
+    font-size: 1.55vmax;
+  }
+
+  .size3 {
+    font-size: 1.25vmax;
+  }
+
+  .frontCentr {
+    top: 200px;
+  }
+
+  .frontBotton {
+    top: 270px;
+  }
+  .font250 {
+    font-size: 28.14VW;
+    left: -50px;
+  }
+  .content {
+    padding: 0 45px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frontTitle {
+    top: 35px;
+  }
+  .size1 {
+    font-size: 3.15vmax;
+  }
+  .size2 {
+    font-size: 1.55vmax;
+  }
+
+  .size3 {
+    font-size: 1.25vmax;
+  }
+  .frontTitle {
+    top: 0px;
+  }
+  .frontCentr {
+    top: 125px;
+  }
+
+  .frontBotton {
+    top: 185px;
+  }
+  .font250 {
+    font-size: 28.14VW;
+    left: -40px;
+  }
+  .content {
+    padding: 0 45px;
+  }
+  .content {
+    padding: 0 25px;
+  }
+}

@@ -73,7 +73,7 @@ class Header extends Component {
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/WhatWeDo">What we do</Link>
+                              <Link to="/what-we-do">What we do</Link>
                           </li>
                           <hr />
                           <li onClick={close}>
@@ -81,7 +81,7 @@ class Header extends Component {
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/">Who trust us</Link>
+                              <Link to="/who-trust-us">Who trust us</Link>
                           </li>
                           <hr />
                           <li onClick={close}>

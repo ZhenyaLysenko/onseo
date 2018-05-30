@@ -6,6 +6,7 @@ import Header from '../header/Header';
 import WhatWeDo from '../WhatWeDo/WhatWeDo'
 import Home from '../Home/Home';
 import Contacts from '../Contacts/Contacts';
+import WhoTrustUs from '../WhoTrustUs/WhoTrustUs';
 import { injectGlobal } from 'styled-components';
 import myFont from '../../../public/fonts/BebasNeueBold.ttf';
 
@@ -26,8 +27,9 @@ class App extends Component {
           <Header></Header>
         </header>
         <Route exact path="/" component={Home}/>
-        <Route path="/WhatWeDo" component={WhatWeDo}/>
+        <Route path="/what-we-do" component={WhatWeDo}/>
         <Route path="/contacts" component={Contacts}/>
+        <Route path="/who-trust-us" component={WhoTrustUs}/>
 
       </div>
     );
