@@ -24,7 +24,7 @@ const WhatWeDo = () => (<div>
     </div>
 
     <div className={style.right + " " + style.contentImg}>
-      <img src={photoTitle} alt="Smiley face"/>
+      <img className={style.CustomImg} src={photoTitle} alt="Smiley face"/>
     </div>
   </div>
 

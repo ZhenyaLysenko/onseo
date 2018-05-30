@@ -26,6 +26,11 @@
   padding: 0 70px;
 }
 
+.CustomImg {
+  width: 100%;
+  height: 100%;
+}
+
 .colConteiner {
   display: flex;
   flex-wrap: wrap;
