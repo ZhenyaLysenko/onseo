@@ -1,0 +1,155 @@
+.flex, .flexAbout, .flexHistory {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.about {
+  position: relative;
+  font-family: 'BebasNenuBold';
+}
+.about__big_sign {
+  font-size: 16vw;
+  color: #f7f7f7;
+  line-height: 1;
+  z-index: 0;
+}
+.about__small_sign {
+  font-size: 60px;
+  color: #00ccff;
+  position: absolute;
+  top: 35px;
+  left: 40px;
+}
+img:first-child {
+  max-width: 700px;
+  max-height: 760px;
+}
+img:last-child {
+  max-width: 1200px;
+  max-height: 500px;
+}
+.img1 {
+  position: relative;
+}
+.white_square {
+  width: 30%;
+  height: 30%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content1 {
+  align-items: center;
+}
+.content__text,
+.content__text2,
+.content__text3 {
+  width: 100%;
+  max-width: 400px;
+  padding: 0 40px;
+}
+.content__text2 {
+  display: none;
+}
+.content__text_h1 {
+  font-family: 'BebasNenuBold';
+}
+.content__text_p {
+  font-family: 'ProximaNova';
+  font-weight: 700;
+}
+.content__text_span {
+  font-weight: 900;
+}
+p {
+  margin-top: 1rem;
+}
+a {
+  color: #000;
+  font-size: 18px;
+  font-family: 'ProximaNova';
+  font-weight: 900;
+}
+a:hover {
+  text-decoration: none;
+  color: #00ccff;
+}
+.rotate {
+  transform: rotate(90deg);
+}
+.flexArrow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.arrow:first-child {
+  margin-top: 25px;
+}
+.arrow {
+  padding: 0 20px;
+}
+.footer_item:first-child {
+  position: relative;
+  margin-right: 50px;
+}
+.footer_item_spani {
+  color: #00ccff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer_item_h2 {
+  font-family: 'BebasNenuBold';
+}
+.hidden .flex {
+  margin-right: -200px;
+}
+.hidden {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .content1 {
+    display: block;
+  }
+  img:first-child {
+    max-width: 500px;
+  }
+  .flexArrow {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flexAbout {
+    display: block;
+  }
+  img:first-child {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .content__text,
+  .content__text2 {
+    max-width: 100%;
+  }
+  .flexHistory {
+    display: block;
+  }
+  .content__text3 {
+    display: none;
+  }
+  .content__text2 {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about__small_sign {
+    top: 0;
+  }
+  .hidden {
+    display: none;
+  }
+}

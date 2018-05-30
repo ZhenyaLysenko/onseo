@@ -68,7 +68,7 @@ class Header extends Component {
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/">About</Link>
+                              <Link to="/About">About</Link>
                           </li>
                           <hr />
                           <li onClick={close}>
