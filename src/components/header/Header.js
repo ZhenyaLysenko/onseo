@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Link} from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import style from './Header.css';
 import WhatWeDo from '../WhatWeDo/WhatWeDo';
+import iconOnseo from "../../../public/header/Onseo_Etalon.png"
 
 const contentStyle = {
   background: "rgba(255,255,255,0.6)",
@@ -72,7 +73,7 @@ class Header extends Component {
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/WhatWeDo">What we do</Link>
+                              <Link to="/what-we-do">What we do</Link>
                           </li>
                           <hr />
                           <li onClick={close}>
@@ -80,7 +81,7 @@ class Header extends Component {
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/">Who trust us</Link>
+                              <Link to="/who-trust-us">Who trust us</Link>
                           </li>
                           <hr />
                           <li onClick={close}>
@@ -96,7 +97,7 @@ class Header extends Component {
                 </Popup>
             </div>
             <div className={"col-4" + " " + style.textCenter}>
-                <img className={style.Brand} src="../../public/header/Onseo_Etalon.png" alt="Onseo" />
+                <img className={style.Brand} src={iconOnseo} alt="Onseo" />
             </div>
             <div className="col-1">
               <div className={style.search}>

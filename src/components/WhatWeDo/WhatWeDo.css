@@ -1,64 +1,85 @@
-.front {
-  position: absolute;
-  font-size: 80px;
-  color: #00CDFF;
-  top: 0;
+.size1 {
+  font-size: 5.65vmax;
 }
 
-img {
+.size2 {
+  font-size: 2.08vmax;
+}
+
+.size3 {
+  font-size: 1.25vmax;
+}
+
+.size4 {
+  font-size: 1.25vmax;
+}
+
+.size5 {
+  font-size: 1.14vmax;
+}
+
+.content {
+  padding: 0 70px;
+}
+
+.contentImg {
+  padding: 0 70px;
+}
+
+.CustomImg {
   width: 100%;
-  max-width: 890px;
   height: 100%;
-  max-height: 530px;
 }
 
-.cover {
-  position: absolute;
-  font-size: 180px;
-  color: #F4F4F4;
-  top: 0;
+.colConteiner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .conteiner {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0 70px;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .sconteiner {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items:flex-start;
+  flex-direction: row  ;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
 .title {
   position: relative;
-  font-size: 250pt;
   color: #F4F4F4;
   font-family: BebasNenuBold;
 }
 
 .frontTitle {
   position: absolute;
-  top: 105px;
-  padding: 0 70px;
-  font-size: 60pt;
+  top: 70px;
   color: #00CDFF;
   font-family: BebasNenuBold;
 }
 
 .left, .right {
-  flex: 1 870px;
+  flex: 1 570px;
+  min-width: 0;
+}
+
+.leftNotFix, .rightNotFix {
+  flex: 0 1 50%;
   min-width: 0;
 }
 
 .cleft, .cright {
-  flex: 1 440px;
+  flex: 0 1 50%;
   min-width: 0;
   margin-top: 144px;
 }
@@ -70,6 +91,18 @@ img {
 
 .cright .proximaNova {
   margin-top: 30px;
+}
+
+.flex1col {
+  flex: 0 1 100%;
+  text-align: left;
+}
+.font250 {
+  font-size: 270px;
+}
+.flex1col .size3 {
+  line-height: 170%;
+  font-weight: bold;
 }
 
 .space {
@@ -98,40 +131,119 @@ img {
   margin-right: 65px;
 }
 
-.font70 {
-  font-size: 70pt;
-}
-
-.font36 {
-  font-size: 36pt;
-}
-
-.font24 {
-  font-size: 24pt;
-}
-
-.font16 {
-  font-size: 16pt;
-}
-
-
-@font-face {
-  font-family: BebasNenuBold;
-  src: url(/../../public/fonts/TTFs/BebasNeueBold.ttf), url(/../../public/fonts/BebasNeueBold.otf);
-}
-
-@media screen and (max-width: 1024px) {
-  .title {
-    font-size: 140pt;
+@media (min-width: 740px) and (max-width: 1199px) {
+  .conteiner {
+    align-items: baseline;
   }
-  .cright {
-    flex: 1 200px;
+  .icon {
+    float: left;
+    margin-right: 0;
+  }
+  .icon4 {
+    float: left;
+    margin-right: 0;
+  }
+  .leftNotFix, .rightNotFix {
+    flex: 1 50%;
+    min-width: 0;
+    margin-top: 50px;
+  }
+
+  .cleft, .cright {
+    flex: 1 100%;
+    min-width: 0;
+    margin-top: 10px;
+  }
+
+  .cleft {
+    margin-top: 15px;
+  }
+
+  .content {
+    padding: 0 45px;
+  }
+  .contentImg {
+    padding: 0;
+  }
+  .colConteiner {
+    align-items: flex-start;
+  }
+  .frontTitle {
+    top: 0px;
+    padding: 0 45px;
+  }
+  .space {
+    height: 100px;
+  }
+  .customWorkTitle {
+    display: none;
+  }
+  .font250 {
+    font-size: 22.14VW;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 0 25px;
+  }
+  .conteiner {
+    align-items: baseline;
+  }
+  .cright .proximaNova {
+    margin-top: 10px;
+  }
+  .icon {
+    height: 35px;
+    width: 35px;
+    float: left;
+    margin-right: 0;
+  }
+  .icon4 {
+    height: 35px;
+    width: 40px;
+    float: left;
+    margin-right: 0;
+  }
+  .leftNotFix, .rightNotFix {
+    flex: 1 100%;
+    min-width: 0;
+    margin-top: 10px;
   }
   .cleft {
-    flex: 1 70px;
-    min-width: 70px;
+    flex: 1 0 15%;
+    margin: 15px 0;
   }
-  .font70 {
-    font-size: 45pt;
+  .cright {
+    flex: 1 0 75%;
+    margin: 15px 0;
+  }
+  .contentImg {
+    padding: 0;
+  }
+  .colConteiner {
+    align-items: flex-start;
+  }
+  .customWorkTitle {
+    font-size: 45px;
+    display: none;
+  }
+  .space {
+    height: 55px;
+  }
+  .customWorkSubTitle {
+    text-align: left;
+    flex: 0 1 100%;
+  }
+  .flexSpace50 {
+    display: none;
+  }
+  .frontTitle {
+    display: block;
+    top: 0;
+    font-size: 4vmax;
+  }
+  .font250 {
+    font-size: 22.14VW;
   }
 }

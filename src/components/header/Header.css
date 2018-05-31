@@ -10,10 +10,6 @@
   height: 50px;
   width: 100px;
 }
-@font-face {
-  font-family: BebasNenuBold;
-  src: url(/../../public/fonts/TTFs/BebasNeueBold.ttf), url(/../../public/fonts/BebasNeueBold.otf);
-}
 .blueColor {
   color: rgb(5, 18, 134);
 }
@@ -85,19 +81,19 @@
     -webkit-transform: rotate(-45deg) translate(-4px, 4px);
     transform: rotate(-45deg) translate(-4px, 4px);
   }
-    
+
     .burgerMenuOpen .bar2 {
       opacity: 0;
     }
-    
+
     .burgerMenuOpen .bar3 {
       -webkit-transform: rotate(45deg) translate(-6px, -6px);
       transform: rotate(45deg) translate(-6px, -6px);
     }
-    
-    
+
+
     /* Menu */
-    
+
     .menu {
       width: 100%;
       display: block;
@@ -192,7 +188,7 @@
     }
     @media screen and (max-width: 770px) {
       .Brand {
-        margin-top: 5px; 
+        margin-top: 5px;
         height: 40px;
         width: 75px;
       }
@@ -230,7 +226,7 @@
     }
     @media screen and (max-width: 540px) {
       .Brand {
-        margin-top: 5px; 
+        margin-top: 5px;
         height: 40px;
         width: 75px;
       }
