@@ -56,6 +56,7 @@
 }
 .copyright_sign {
   font-weight: 900;
+  padding-left: 10px;
 }
 .contact_container {
   display: flex;
@@ -83,6 +84,9 @@ iframe {
 }
 .footer2 {
   display: none;
+}
+.myLink {
+  padding: 0 10px;
 }
 
 @media screen and (max-width: 1100px) {

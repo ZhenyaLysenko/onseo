@@ -14,12 +14,12 @@ class About extends Component {
 
               <div className={style.flexAbout}>
                 <div className={style.img1}>
-                  <img src={Img1} alt="about-img1"/>
+                  <img className={style.about_img} src={Img1} alt="about-img1"/>
                   <div className={style.white_square}>
                     <div className={style.rotate}>
-                      <a href='#'>
+                      <a className={style.about_a} href='#'>
                         History
-                        <i className="fa fa-caret-right"></i>
+                        <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>
                       </a>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ class About extends Component {
                   </div>
                 </div>
                 <div className={style.img2}>
-                  <img src={Img2} alt="about-img2"/>
+                  <img className={style.about_img} src={Img2} alt="about-img2"/>
                 </div>
                 <div className={style.content__text2}>
                   <h1 className={style.content__text_h1}>Full spectrum of Talent</h1>
@@ -95,14 +95,14 @@ class About extends Component {
 
               <div className={style.flexArrow}>
                 <div className={style.arrow}>
-                  <a href='#'>
+                  <a className={style.about_a} href='#'>
                     Next
-                    <i className="fa fa-caret-right"></i>
+                    <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>
                   </a>
                 </div>
                 <div className={style.arrow}>
-                  <a href='#'>
-                    <i className="fa fa-caret-left"></i>
+                  <a className={style.about_a} href='#'>
+                    <i className={"fa" + " " + "fa-caret-left" +  " " + style.myLink}></i>
                     Back
                   </a>
                 </div>

@@ -38,11 +38,11 @@ class Contacts extends Component {
                     </div>
                       <div className={style.item}>
                         <span className={style.text}>Follow us</span>
-                        <i className="fa fa-facebook"></i>
-                        <i className="fa fa-twitter"></i>
-                        <i className="fa fa-youtube"></i>
-                        <i className="fa fa-instagram"></i>
-                        <i className="fa fa-linkedin"></i>
+                        <i className={"fa" + " " + "fa-facebook" +  " " + style.myLink}></i>
+                        <i className={"fa" + " " + "fa-twitter" +  " " + style.myLink}></i>
+                        <i className={"fa" + " " + "fa-youtube" +  " " + style.myLink}></i>
+                        <i className={"fa" + " " + "fa-instagram" +  " " + style.myLink}></i>
+                        <i className={"fa" + " " + "fa-linkedin" +  " " + style.myLink}></i>
                       </div>
                   </div>
                 </div>
@@ -55,14 +55,14 @@ class Contacts extends Component {
                   <i className="fa fa-copyright"></i>
                   <span className={style.copyright_sign}>Onseo 2017</span>
                 </div>
-                  <div className={style.item}>
-                    <span className={style.text}>Follow us</span>
-                    <i className="fa fa-facebook"></i>
-                    <i className="fa fa-twitter"></i>
-                    <i className="fa fa-youtube"></i>
-                    <i className="fa fa-instagram"></i>
-                    <i className="fa fa-linkedin"></i>
-                  </div>
+                <div className={style.item}>
+                  <span className={style.text}>Follow us</span>
+                  <i className={"fa" + " " + "fa-facebook" +  " " + style.myLink}></i>
+                  <i className={"fa" + " " + "fa-twitter" +  " " + style.myLink}></i>
+                  <i className={"fa" + " " + "fa-youtube" +  " " + style.myLink}></i>
+                  <i className={"fa" + " " + "fa-instagram" +  " " + style.myLink}></i>
+                  <i className={"fa" + " " + "fa-linkedin" +  " " + style.myLink}></i>
+                </div>
               </div>
               <div className={style.blue_square}></div>
             </div>
