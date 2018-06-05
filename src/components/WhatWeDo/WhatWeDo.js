@@ -1,13 +1,25 @@
-import style from "./WhatWeDo.css";
 import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
+import styled from 'styled-components';
 import Carousel from './Carousel';
 import Footer from './Footer';
+import style from "./WhatWeDo.css";
+
 import Icon1 from "../../../public/what-we-do-assets/icon1.png"
 import Icon2 from "../../../public/what-we-do-assets/icon2.png"
 import Icon3 from "../../../public/what-we-do-assets/icon3.png"
 import Icon4 from "../../../public/what-we-do-assets/icon4.png"
+
 import photoTitle from "../../../public/what-we-do-assets/photoTitle.png"
+import ImgCustom1 from "../../../public/what-we-do-assets/photoCat.png"
+import ImgCustom2 from "../../../public/what-we-do-assets/photoCustom2.png"
+import ImgCustom3 from "../../../public/what-we-do-assets/photoCat.png"
+import ImgCustom4 from "../../../public/what-we-do-assets/photoCat.png"
+
+const Item = styled.img `
+  width: 100%;
+  height: 100%;
+`
 
 const WhatWeDo = () => (<div>
   <div className={style.title}>
@@ -30,7 +42,16 @@ const WhatWeDo = () => (<div>
 
   <div className={style.space}></div>
 
-  <Carousel/>
+  <Carousel>
+    <Item src={ImgCustom1}>
+    </Item>
+    <Item src={ImgCustom2}>
+    </Item>
+    <Item src={ImgCustom1}>
+    </Item>
+    <Item src={ImgCustom1}>
+    </Item>
+  </Carousel>
 
   <div className={style.space}></div>
 
