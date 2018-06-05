@@ -1,0 +1,59 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  font-family: proxima-nova,sans-serif;
+  font-weight: bold;
+}
+
+.leftBtn {
+  flex: 50%;
+  text-align: right;
+  padding-top: 30px;
+}
+
+.rightBtn {
+  flex: 50%;
+  text-align: left;
+}
+
+.pointer:hover {
+  color: #00CDFF;
+}
+
+.space {
+  height: 260px;
+}
+
+.rightBtn span, .leftBtn span {
+  padding: 15px;
+}
+
+.size2 {
+  font-size: 1.25vmax;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width: 1199px) {
+  .size2 {
+    font-size: 1.65vmax;
+  }
+  .space {
+    height: 70px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .size2 {
+    font-size: 1.55vmax;
+  }
+  .rightBtn span, .leftBtn span {
+    padding: 10px;
+  }
+  .space {
+    height: 40px;
+  }
+}
