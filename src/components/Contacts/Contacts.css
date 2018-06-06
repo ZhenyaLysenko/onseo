@@ -25,7 +25,7 @@
 }
 .content__phone_item {
   padding: 10px 0;
-  font-family: 'ProximaNova';
+  font-family: 'proxima-nova', sans-serif;
   color: #222325;
   line-height: 1.5;
 }
@@ -52,7 +52,7 @@
 .copyright {
   margin-left: -10px;
   color: #222325;
-  font-family: 'ProximaNova';
+  font-family: 'proxima-nova', sans-serif;
 }
 .copyright_sign {
   font-weight: 900;

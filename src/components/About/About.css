@@ -60,10 +60,10 @@
   display: none;
 }
 .content__text_h1 {
-  font-family: 'BebasNenuBold';
+  font-family: 'proxima-nova', sans-serif;
 }
 .content__text_p {
-  font-family: 'ProximaNova';
+  font-family: 'proxima-nova', sans-serif;
   font-weight: 700;
   margin-top: 1rem;
 }
@@ -73,7 +73,7 @@
 .about_a {
   color: #000;
   font-size: 18px;
-  font-family: 'ProximaNova';
+  font-family: 'proxima-nova', sans-serif;
   font-weight: 900;
 }
 .about_a:hover {
