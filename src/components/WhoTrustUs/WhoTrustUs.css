@@ -10,10 +10,17 @@
   font-size: 1.00vmax;
 }
 
+.icon {
+  margin-bottom: 45px;
+  width: 14vw;
+  height: 8vw;
+}
+
 .font250 {
   position: absolute;
+  top: 0;
+  left: 0;
   font-size: 17.14VW;
-  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -22,6 +29,9 @@
 }
 
 .title {
+  width: 100%;
+  overflow: hidden;
+  height: 24vw;
   position: relative;
   color: #F4F4F4;
   font-family: BebasNenuBold;
@@ -29,14 +39,14 @@
 
 .frontTitle {
   position: absolute;
-  top: 95px;
+  top: 5vw;
   color: #00CDFF;
 }
 
 .frontCentr {
   position: absolute;
   color: black;
-  top: 265px;
+  top: 13.5vw;
   font-family: proxima-nova, sans-serif;
   font-weight: bold;
 }
@@ -44,7 +54,7 @@
 .frontBotton {
   position: absolute;
   color: black;
-  top: 350px;
+  top: 18vw;
   font-family: 'proxima-nova', sans-serif;
   font-weight: bold;
 }
@@ -52,7 +62,15 @@
 
 @media (min-width: 740px) and (max-width: 1199px) {
   .frontTitle {
-    top: 35px;
+    top: 3.5vw;
+  }
+  .title {
+    height: 35vw;
+  }
+  .icon {
+    margin-bottom: 45px;
+    width: 18vw;
+    height: 11vw;
   }
   .size2 {
     font-size: 1.55vmax;
@@ -63,14 +81,14 @@
   }
 
   .frontCentr {
-    top: 200px;
+    top: 21vw;
   }
 
   .frontBotton {
-    top: 270px;
+    top: 30vw;
   }
   .font250 {
-    font-size: 28.14VW;
+    font-size: 22.14VW;
     left: -50px;
   }
   .content {
@@ -81,6 +99,15 @@
 @media screen and (max-width: 767px) {
   .frontTitle {
     top: 35px;
+  }
+  .icon {
+    margin-bottom: 30px;
+    margin-left: 5vw;
+    width: 160px;
+    height: 100px;
+  }
+  .title {
+    height: 24vmax;
   }
   .size1 {
     font-size: 3.15vmax;
@@ -107,9 +134,19 @@
     left: -40px;
   }
   .content {
-    padding: 0 45px;
-  }
-  .content {
     padding: 0 25px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 0 10px;
+  }
+  .title {
+    height: 24vmax;
+  }
+  .icon {
+    width: 45vw;
+    height: 27vw;
   }
 }
