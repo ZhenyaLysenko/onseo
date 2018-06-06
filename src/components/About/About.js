@@ -1,5 +1,7 @@
 import style from "./About.css";
 import React, {Component} from 'react';
+import {Grid, Row, Col} from 'react-bootstrap';
+import Carousel from './Carousel';
 import Img1 from "../../../public/about/img1.png"
 import Img2 from "../../../public/about/img2.png"
 
@@ -17,7 +19,7 @@ class About extends Component {
                   <img className={style.about_img} src={Img1} alt="about-img1"/>
                   <div className={style.white_square}>
                     <div className={style.rotate}>
-                      <a className={style.about_a} href='#'>
+                      <a href='' className={style.about_a}>
                         History
                         <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>
                       </a>
@@ -60,76 +62,16 @@ class About extends Component {
                   <div className={style.about}>
                     <h1 className={style.about__big_sign}>ABOUT US</h1>
                     <h1 className={style.about__small_sign}>HISTORY</h1>
-                    <div className={style.content__text3}>
-                      <h1 className={style.content__text_h1}>Full spectrum of Talent</h1>
-                      <p className={style.content__text_p}>
-                        From idea Hunting, Concepts and Storyboarding
-                        to Full Backend Development, Monetization and
-                        Continuous Improvement.
-                      </p>
-                      <p className={style.content__text_p}>
-                        Massive multiplayer online games, casual
-                        strategy games and real money casino
-                        gaming.
-                      </p>
-                    </div>
                   </div>
                 </div>
                 <div className={style.img2}>
                   <img className={style.about_img} src={Img2} alt="about-img2"/>
                 </div>
-                <div className={style.content__text2}>
-                  <h1 className={style.content__text_h1}>Full spectrum of Talent</h1>
-                  <p className={style.content__text_p}>
-                    From idea Hunting, Concepts and Storyboarding
-                    to Full Backend Development, Monetization and
-                    Continuous Improvement.
-                  </p>
-                  <p className={style.content__text_p}>
-                    Massive multiplayer online games, casual
-                    strategy games and real money casino
-                    gaming.
-                  </p>
-                </div>
               </div>
 
-              <div className={style.flexArrow}>
-                <div className={style.arrow}>
-                  <a className={style.about_a} href='#'>
-                    Next
-                    <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>
-                  </a>
-                </div>
-                <div className={style.arrow}>
-                  <a className={style.about_a} href='#'>
-                    <i className={"fa" + " " + "fa-caret-left" +  " " + style.myLink}></i>
-                    Back
-                  </a>
-                </div>
-              </div>
-              <div className={style.hidden}>
-                <div className={style.flex}>
-                  <div className={style.footer_item}>
-                    <span className={style.footer_item_spani}><i className="fa fa-square"></i></span>
-                  </div>
-                  <div className={style.footer_item}>
-                    <h2 className={style.footer_item_h2}>Lorem ipsum</h2>
-                    <i className="fa fa-square"></i>
-                  </div>
-                  <div className={style.footer_item}>
-                    <h2 className={style.footer_item_h2}>Slots Craze</h2>
-                    <i className="fa fa-square"></i>
-                  </div>
-                  <div className={style.footer_item}>
-                    <h2 className={style.footer_item_h2}>God of Axion</h2>
-                    <i className="fa fa-square"></i>
-                  </div>
-                  <div className={style.footer_item}>
-                    <h2 className={style.footer_item_h2}>Full spectrum of Talent</h2>
-                    <i className="fa fa-square"></i>
-                  </div>
-                </div>
-              </div>
+              <Carousel />
+
+              <div className={style.space}></div>
 
             </div>
         );

@@ -83,36 +83,6 @@
 .rotate {
   transform: rotate(90deg);
 }
-.flexArrow {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 200px;
-}
-.arrow:first-child {
-  margin-top: 25px;
-}
-.arrow {
-  padding: 0 20px;
-}
-.footer_item:first-child {
-  position: relative;
-  margin-right: 50px;
-}
-.footer_item_spani {
-  color: #00ccff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-.footer_item_h2 {
-  font-family: 'BebasNenuBold';
-}
-.hidden .flex {
-  margin-right: -200px;
-}
-.hidden {
-  overflow: hidden;
-}
 .myLink {
   padding: 0 10px;
 }
@@ -123,9 +93,6 @@
   }
   .about_img:first-child {
     max-width: 500px;
-  }
-  .flexArrow {
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -153,8 +120,5 @@
 @media screen and (max-width: 480px) {
   .about__small_sign {
     top: 0;
-  }
-  .hidden {
-    display: none;
   }
 }
