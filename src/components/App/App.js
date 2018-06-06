@@ -11,13 +11,7 @@ import WhoTrustUs from '../WhoTrustUs/WhoTrustUs';
 import { injectGlobal } from 'styled-components';
 import myFont from '../../../public/fonts/BebasNeueBold.ttf';
 
-injectGlobal`
-@font-face {
-font-family: 'BebasNenuBold';
-src: url(${myFont}) format('truetype');
-font-weight: normal;
-font-style: normal;
-}`
+
 
 class App extends Component {
   render() {
