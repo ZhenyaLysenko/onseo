@@ -12,22 +12,12 @@ import { injectGlobal } from 'styled-components';
 import myFont from '../../../public/fonts/BebasNeueBold.ttf';
 
 injectGlobal`
-<<<<<<< HEAD
 @font-face {
 font-family: 'BebasNenuBold';
 src: url(${myFont}) format('truetype');
 font-weight: normal;
 font-style: normal;
-}
-=======
-  @font-face {
-    font-family: 'BebasNenuBold';
-    src: url(${myFont}) format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
->>>>>>> 31f80a74e2d6535039f815f85ea30e75bf2f2d2d
-`;
+}`
 
 class App extends Component {
   render() {
