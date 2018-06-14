@@ -10,6 +10,31 @@
   height: 50px;
   width: 100px;
 }
+.searchAnimation form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.searchAnimation input {
+  width: 0;
+  font-size: 15px;
+  padding: 0 42px 0 15px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  z-index: 2;
+}
+.searchAnimation input:focus {
+  width: 150px;
+  z-index: 3;
+  border-bottom: 2px solid #F9F0DA;
+}
+
 .blueColor {
   color: rgb(5, 18, 134);
 }
@@ -20,15 +45,6 @@
     top: 25px;
     right: 70px;
     z-index: 9999;
-    color: rgb(5, 18, 134);
-}
-.SearchField {
-    margin-top: 15px;
-    cursor: pointer;
-    position: fixed;
-    margin-right: 20px;
-    right: 75px;
-    z-index: 1;
     color: rgb(5, 18, 134);
 }
 .AppHeader {
@@ -100,8 +116,18 @@
       text-align: left;
       padding: 0px;
       color: black;
-
+      animation: slide 1s 1;
+      overflow: scroll;
     }
+    @keyframes slide {
+      0% {
+        transform: translateY(100%);
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+    
     .menu ul hr {
       margin-left: 0;
     }
@@ -123,15 +149,15 @@
       color: #008cff;
     }
     @media screen and (max-width: 1025px) {
-      .SearchField {
-        margin-top: 15px;
+    .searchAnimation input:focus {
+        margin-top: 10px;
         cursor: pointer;
         position: fixed;
         margin-right: 20px;
         right: 75px;
         z-index: 1;
         color: rgb(5, 18, 134);
-        font-size: 1.0em;
+        font-size: .9em;
         height: 40px;
     }
       .menu ul {

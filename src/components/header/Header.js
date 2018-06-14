@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom';
+import Scroll from 'react-scroll';
 import Popup from 'reactjs-popup';
 import style from './Header.css';
-import WhatWeDo from '../WhatWeDo/WhatWeDo';
 import iconOnseo from "../../../public/header/Onseo_Etalon.png"
 
+var Link = Scroll.Link;
+
 const contentStyle = {
-  background: "rgba(255,255,255,0.6)",
+  background: "rgba(255,255,255,0.9)",
   borderRadius: "0 10px 10px 0",
   width: "25%",
   height: "100%",
@@ -58,46 +59,108 @@ class Header extends Component {
                     <div className={open ? style.burgerMenuOpen : style.burgerMenu }>
                       <div className={style.bar1} key="b1" />
                       <div className={style.bar2} key="b2" />
-                      <div className={style.bar3} key="b3" />
+                      <div className={style.bar3} key="b3" /> 
                     </div>
                   }>
                   {close =>
                     <div className={style.menu}>
                       <ul>
-                      <li onClick={close}>
-                              <Link to="/">Home</Link>
+                        <li>
+                          <Link onClick={close}
+                            activeClass="active"
+                            to="Home"
+                            offset={-75}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            >
+                            Home
+                          </Link>
+                        </li>
+                        <hr />
+                        <li>
+                          <Link onClick={close}
+                            activeClass="active"
+                            to="About"
+                            offset={-75}
+                            spy={true}
+                            smooth={true}
+                            duration={500}>
+                            About
+                          </Link>
+                        </li>
+                          <hr />
+                          <li>
+                          <Link onClick={close}
+                            activeClass="active"
+                            to="WhoTrustUs"
+                            offset={-25}
+                            spy={true}
+                            smooth={true}
+                            duration={500}>
+                            Who trust us
+                          </Link>
+                        </li>
+                        <hr />
+                          <li>
+                            <Link onClick={close}
+                              activeClass="active"
+                              to="WhatWeDo"
+                              spy={true}
+                              smooth={true}
+                              duration={500}>
+                              What we do
+                            </Link>
                           </li>
                           <hr />
-                          <li onClick={close}>
-                              <Link to="/About">About</Link>
+                          <li>
+                            <Link onClick={close}
+                                  activeClass="active"
+                                  to="HowWeDo"
+                                  offset={-25}
+                                  spy={true}
+                                  smooth={true}
+                                  duration={500}>
+                                  How we do
+                            </Link>
                           </li>
-                          <hr />
-                          <li onClick={close}>
-                              <Link to="/what-we-do">What we do</Link>
-                          </li>
-                          <hr />
-                          <li onClick={close}>
-                              <Link to="/HowWeDo">How we do</Link>
-                          </li>
-                          <hr />
+                          {/* <hr />
                           <li onClick={close}>
                               <Link to="/who-trust-us">Who trust us</Link>
+                          </li> */}
+                          <hr />
+                          <li onClick={close}>
+                              <Link onClick={close}
+                                activeClass="active"
+                                to="Vacansies"
+                                offset={-25}
+                                spy={true}
+                                smooth={true}
+                                duration={500}>
+                                Vacancies
+                              </Link>
                           </li>
                           <hr />
                           <li onClick={close}>
-                              <Link to="/">Vacancies</Link>
-                          </li>
-                          <hr />
-                          <li onClick={close}>
-                              <Link to="/Contacts">Contacts</Link>
-                          </li>
-                          <hr />
+                            <Link onClick={close}
+                              activeClass="active"
+                              to="Contacts"
+                              offset={-75}
+                              spy={true}
+                              smooth={true}
+                              duration={500}>
+                              Contacts
+                            </Link>
+                          </li> 
                       </ul>
                     </div>}
                 </Popup>
             </div>
             <div className={"col-4" + " " + style.textCenter}>
-                <img className={style.Brand} src={iconOnseo} alt="Onseo" />
+                    <a href="#">
+                      <img className={style.Brand} src={iconOnseo} alt="Onseo" />
+                    </a>
+                
             </div>
             <div className="col-1">
               <div className={style.search}>
@@ -110,11 +173,13 @@ class Header extends Component {
               <div >
               {this.state.search ?
                     (
-                      <div>
+                      <div className={style.searchAnimation}>
                         <a onClick={this.handleSearch}>
                           <i className={"fa fa-angle-right" + " " + style.circleRight}></i>
                         </a>
-                        <input onChange={this.handleChange} className={style.SearchField} value={this.state.value} type="text" placeholder="Search..." />
+                        <form>
+                          <input ref={input => input && input.focus()} onChange={this.handleChange} className={style.SearchField} value={this.state.value} type="text" placeholder="Search..." />
+                        </form>
                       </div>
                     ) :
                     (
