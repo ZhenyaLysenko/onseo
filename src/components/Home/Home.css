@@ -1,34 +1,127 @@
 .background {
-    height: 100%;
-    width: 100%;
-    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
     background: url(../../../public/home/Home.png) no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+}
+.backgroundColorOne {
+    background-color: rgb(117, 144, 152);
+    height: 10px;
+}
+.backgroundColorTwo {
+    background-color: rgb(175, 194, 203);
+    height: 10px;
+}
+.backgroundColorThee {
+    background-color: rgb(43, 209, 252);
+    height: 10px;
+}
+.marginTop {
+    position: relative;
+    top: 40vw;;
+    text-align: center;
+}
+.marginLeft {
+    margin-left: 30px;
+}
+.splace{
+    height: 0;
+}
+.displayBlock {
+    display: block;
+}
+.colorSilver {
+    color: rgb(175, 194, 203);
+    font-family: Arial;
+    font-size: 13px;
+}
+.marginLeft {
+    margin-left: 0;
+}
+.marginTop a {
+    color: rgb(175, 194, 203);
+    background-color: transparent;
+    text-decoration: none;
+}
+.textLeft {
+    text-align: left;
+}
+.marginTop a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 .content {
-    position: absolute;
-    margin-left: 50px;
-    top: 70%;
-}
+    position: relative;
+    margin-left: 1vw;
+    top: 40vw;
+} 
 .whiteText {
     color: white;
     font-family: BebasNeueBold;
-    font-size: 30pt;
+    font-size: 15vw;
 }
 .blueText {
-    font-size: 25pt;
-    color: aqua;
-    font-family: BebasNeueBold;
+    font-size: 55pt;
+    color: #00CDFF;
+    font-family: BebasNenuBold;
+}
+@media screen and (max-width: 576px) {
+    .blueText {
+        font-size: 10vw;
+    }
+    .whiteText {
+        font-size: 15vw;
+    }
+    .content {
+        top: 65vw;
+    }
+    .marginTop {
+        top: 70vw;
+        margin: auto;
+    }
+    .textLeft {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .blueText {
+        font-size: 5vw;
+    }
+    .whiteText {
+        font-size: 10vw;
+    }
+    .content {
+        top: 45vw;
+    }
+    .marginTop {
+        top: 43vw;
+        margin: auto;
+    }
+    .textLeft {
+        text-align: center;
+    }
 }
 @media screen and (min-width: 960px) {
     .blueText {
-        font-size: 35pt;
+        font-size: 4vw;
+        padding: 0 55px;
     }
     .whiteText {
-        font-size: 50pt;
+        font-size: 8vw;
+        padding: 0 55px;
+    }
+    .content {
+        top: 30vw;
+        line-height: 5vw;
+    }
+    .marginTop {
+        top: 30vw;;
+    }
+    .colorSilver {
+        font-size: .9vw;
     }
 }

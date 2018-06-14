@@ -46,7 +46,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(ttf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        test: /\.(ttf|otf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?name=public/fonts/[name].[ext]'
       }
     ]
