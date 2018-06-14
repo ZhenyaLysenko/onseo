@@ -76,7 +76,7 @@ class Carousel extends Component {
         </CarouselContainer>
       </Wrapper>
 
-      <div className={style.space}> </div>
+      {/* <div className={style.space}> </div> */}
 
       <div className={style.nav}>
         <div className={style.leftBtn + " " + style.size2} onClick={ this.nextSlide}>
