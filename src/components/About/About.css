@@ -75,13 +75,15 @@
   font-size: 18px;
   font-family: 'proxima-nova', sans-serif;
   font-weight: 900;
-}
-.about_a:hover {
-  text-decoration: none;
-  color: #00ccff;
+  
 }
 .rotate {
   transform: rotate(90deg);
+}
+.rotate:hover {
+  text-decoration: none;
+  color: #00ccff;
+  cursor: pointer;
 }
 .myLink {
   padding: 0 10px;

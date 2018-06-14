@@ -1,9 +1,12 @@
 import style from "./About.css";
 import React, {Component} from 'react';
-import {Grid, Row, Col} from 'react-bootstrap';
+import Scroll from 'react-scroll';
 import Carousel from './Carousel';
 import Img1 from "../../../public/about/img1.png"
 import Img2 from "../../../public/about/img2.png"
+
+var Link = Scroll.Link;
+var Element = Scroll.Element;
 
 class About extends Component {
     render() {
@@ -13,16 +16,20 @@ class About extends Component {
                 <h1 className={style.about__big_sign}>ABOUT US</h1>
                 <h1 className={style.about__small_sign}>WHO WE ARE</h1>
               </div>
-
               <div className={style.flexAbout}>
                 <div className={style.img1}>
                   <img className={style.about_img} src={Img1} alt="about-img1"/>
                   <div className={style.white_square}>
                     <div className={style.rotate}>
-                      <a href='' className={style.about_a}>
-                        History
-                        <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>
-                      </a>
+                      <Link className={style.about_a}
+                            activeClass="active"
+                            to="History"
+                            spy={true}
+                            offset={-75}
+                            smooth={true}
+                            duration={500}>History
+                        <i className={"fa" + " " + "fa-caret-right" +  " " + style.myLink}></i>    
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -56,23 +63,22 @@ class About extends Component {
                   </div>
                 </div>
               </div>
-
-              <div className={style.flexHistory}>
-                <div className={style.content2}>
-                  <div className={style.about}>
-                    <h1 className={style.about__big_sign}>ABOUT US</h1>
-                    <h1 className={style.about__small_sign}>HISTORY</h1>
+              <Element name="History">
+        
+                <div className={style.flexHistory}>
+                  <div className={style.content2}>
+                    <div className={style.about}>
+                      <h1 className={style.about__big_sign}>ABOUT US</h1>
+                      <h1 className={style.about__small_sign}>HISTORY</h1>
+                    </div>
+                  </div>
+                  <div className={style.img2}>
+                    <img className={style.about_img} src={Img2} alt="about-img2"/>
                   </div>
                 </div>
-                <div className={style.img2}>
-                  <img className={style.about_img} src={Img2} alt="about-img2"/>
-                </div>
-              </div>
-
-              <Carousel />
-
+                <Carousel />
+              </Element>
               <div className={style.space}></div>
-
             </div>
         );
     }
