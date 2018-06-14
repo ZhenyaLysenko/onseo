@@ -1,3 +1,6 @@
+.marginTop {
+  margin-top: 75px;
+}
 .contacts {
   position: relative;
   font-family: 'BebasNenuBold';
@@ -72,7 +75,7 @@ iframe {
   min-width: 600px;
   min-height: 450px;
 }
-.blue_square {
+/* .blue_square {
   position: absolute;
   top: -200px;
   right: 0;
@@ -81,7 +84,7 @@ iframe {
   background-color: #e5faff;
   overflow: hidden;
   z-index: 0;
-}
+} */
 .footer2 {
   display: none;
 }
