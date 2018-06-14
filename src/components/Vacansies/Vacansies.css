@@ -1,0 +1,317 @@
+.marginTopContainer {
+    position: relative;
+  }
+  .title {
+    position: relative;
+    font-size: 17.14VW;
+    color: #F4F4F4;
+    font-family: BebasNenuBold;
+    height: 300px;
+  }
+  .frontTitle {
+    position: absolute;
+    top: 5vw;
+    padding: 0 55px;
+    font-size: 5.15vmax;
+    color: #00CDFF;
+    font-family: BebasNenuBold;
+  }
+.fontBold {
+    font-family: BebasNenuBold;
+    font-size: 20pt;
+}
+.marginTop {
+    margin-top: 200px;
+    top: 150px;
+}
+.interval {
+    padding-top: 5px;
+    margin: 0 155px;
+    font-family: BebasNenuBold;
+    font-size: 20pt;
+    text-align: left;
+    /* display: block; */
+    cursor: pointer;
+    width: 300px;
+}
+.animationHover:hover, .animationHover:focus, .animationHover:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.25s;
+    animation-duration: 0.25s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+}
+@-webkit-keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(1px) rotate(1deg);
+      transform: translateX(1px) rotate(1deg);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-1px) rotate(-1deg);
+      transform: translateX(-1px) rotate(-1deg);
+    }
+}
+  
+@keyframes hvr-buzz {
+    50% {
+      -webkit-transform: translateX(1px) rotate(1deg);
+      transform: translateX(1px) rotate(1deg);
+    }
+  
+    100% {
+      -webkit-transform: translateX(-1px) rotate(-1deg);
+      transform: translateX(-1px) rotate(-1deg);
+    }
+}
+.fontFamilyBold {
+    font-family: ProximaNovaCondensedSemibold;
+}
+.marginTopDown {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.titleList {
+    background-color: aquamarine;
+}
+.colorBlue {
+    color: #00CDFF;
+    list-style-type: square;
+}
+.locateRight {
+    width: 630px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin-right: 140px;
+    animation: slide 3s 1;
+}
+.colorSilver {
+    color: rgb(112, 111, 111);
+    font-family: ProximaNovaCondensedRegular;
+}
+.fontTitleOne {
+    font-size: 40pt;
+    font-family: BebasNenuBold;
+}
+.sizelist {
+    font-size: 12pt;
+}
+@keyframes slide {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+  
+    1% {
+        display: block;
+        opacity: 0;
+    }
+  
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 576px) {
+    .title {
+        position: relative;
+        font-size: 50pt;
+        color: #F4F4F4;
+        font-family: BebasNenuBold;
+        height: 50px;
+    }
+    .frontTitle {
+        position: absolute;
+        top: 5px; 
+        padding: 0 15px;
+        font-size: 25pt;
+        color: #00CDFF;
+        font-family: BebasNenuBold;
+    }
+    .fontBold {
+        font-family: BebasNenuBold;
+        font-size: 5pt;
+    }
+    .marginTop {
+        margin-top: 50px;
+        top: 50px;
+    }
+    .interval {
+        margin-top: 5px;
+        padding: 0 15px;
+        font-family: BebasNenuBold;
+        font-size: 15pt;
+    }
+    .locateRight {
+        width: 230px;
+        position: relative;
+        padding: 0 15px;
+        top: 10px;
+        margin-right: 140px;
+        /* z-index: 5; */
+        
+    }
+    .fontTitleOne {
+        font-size: 10pt;
+        font-family: BebasNenuBold;
+    }
+}
+@media screen and (max-width: 800px) {
+    .title {
+        position: relative;
+        font-size: 50pt;
+        color: #F4F4F4;
+        font-family: BebasNenuBold;
+        height: 50px;
+    }
+    .frontTitle {
+        position: absolute;
+        top: 0; 
+        padding: 0 15px;
+        font-size: 25pt;
+        color: #00CDFF;
+        font-family: BebasNenuBold;
+    }
+    .fontBold {
+        font-family: BebasNenuBold;
+        font-size: 5pt;
+    }
+    .marginTop {
+        margin-top: 100px;
+        top: 50px;
+        width: 100%;
+    }
+    .interval {
+        margin: auto;
+        padding: 0 5px;
+        font-family: BebasNenuBold;
+        font-size: 15pt;
+        text-align: center;
+
+    }
+    .locateRight {
+        width: 230px;
+        position: relative;
+        padding: 0 15px;
+        top: 10px;
+        margin-right: 140px;
+        z-index: 5;
+    }
+    .fontTitleOne {
+        font-size: 15pt;
+        font-family: BebasNenuBold;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1400px) {
+    .title {
+        position: relative;
+        font-size: 150px;
+        color: #F4F4F4;
+        font-family: BebasNenuBold;
+        height: 100px;
+    }
+    .frontTitle {
+        position: absolute;
+        top: 35px; 
+        padding: 0 55px;
+        font-size: 60pt;
+        color: #00CDFF;
+        font-family: BebasNenuBold;
+    }
+    .fontBold {
+        font-family: BebasNenuBold;
+        font-size: 20pt;
+    }
+    .marginTop {
+        margin-top: 200px;
+        top: 150px;
+    }
+    .interval {
+        margin-top: 5px;
+        padding: 0 55px;
+        font-family: BebasNenuBold;
+        font-size: 20pt;
+        text-align: left;
+    }
+    .marginTopDown {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .locateRight {
+        width: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 100px;
+        animation: slide 3s 1;
+    }
+    .fontTitleOne {
+        font-size: 40pt;
+        font-family: BebasNenuBold;
+    }
+    .sizelist {
+        font-size: 10pt;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .title {
+        position: relative;
+        font-size: 350px;
+        color: #F4F4F4;
+        font-family: BebasNenuBold;
+        height: 100px;
+    }
+    .fontFamilyBold {
+        font-family: ProximaNovaCondensedSemibold;
+        font-size: 25pt;
+    }
+    .colorSilver {
+        color: rgb(112, 111, 111);
+        font-family: ProximaNovaCondensedRegular;
+        font-size: 25pt;
+    }
+    .frontTitle {
+        position: absolute;
+        top: 35px; 
+        padding: 0 55px;
+        font-size: 50%;
+        color: #00CDFF;
+        font-family: BebasNenuBold;
+    }
+    .fontBold {
+        font-family: BebasNenuBold;
+        font-size: 60pt;
+    }
+    .marginTop {
+        margin-top: 300px;
+        top: 150px;
+    }
+    .interval {
+        margin-top: 5px;
+        padding: 0 75px;
+        font-family: BebasNenuBold;
+        font-size: 40pt;
+        text-align: left;
+    }
+    .locateRight {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 150px;
+        margin-right: 10%;
+        animation: slide 3s 1;
+        text-align: left;
+    }
+    .fontTitleOne {
+        font-size: 60pt;
+        font-family: BebasNenuBold;
+    }
+    .sizelist {
+        font-size: 35pt;
+    }
+}
