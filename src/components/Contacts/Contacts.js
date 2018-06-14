@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 class Contacts extends Component {
     render() {
         return(
-            <div>
+            <div className={style.marginTop}>
               <div className={style.contacts}>
                 <h1 className={style.contacts__big_sign}>CONTACTS</h1>
                 <h1 className={style.contacts__small_sign}>CONTACTS</h1>
@@ -34,7 +34,7 @@ class Contacts extends Component {
                   <div className={style.footer}>
                     <div className={style.copyright}>
                       <i className="fa fa-copyright"></i>
-                      <span className={style.copyright_sign}>Onseo 2017</span>
+                      <span className={style.copyright_sign}>Onseo 2018</span>
                     </div>
                       <div className={style.item}>
                         <span className={style.text}>Follow us</span>
@@ -64,7 +64,7 @@ class Contacts extends Component {
                   <i className={"fa" + " " + "fa-linkedin" +  " " + style.myLink}></i>
                 </div>
               </div>
-              <div className={style.blue_square}></div>
+              {/* <div className={style.blue_square}></div> */}
             </div>
         );
     }
