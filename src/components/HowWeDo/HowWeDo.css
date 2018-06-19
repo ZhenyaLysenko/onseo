@@ -72,14 +72,13 @@
 }
 .sizeImgBack {
   left: 0;
-  
+
 }
 .title {
     position: relative;
     font-size: 17.14VW;
     color: #F4F4F4;
     font-family: BebasNenuBold;
-    height: 300px;
   }
   .frontTitle {
     position: absolute;
@@ -89,7 +88,7 @@
     color: #00CDFF;
     font-family: BebasNenuBold;
   }
-  li { 
+  li {
     color: #00CDFF;
   }
   li span, .colorGray {
@@ -185,7 +184,7 @@
   }
   .frontTitle {
     position: absolute;
-    top: 0; 
+    top: 0;
     padding: 0 30px;
     font-size: 20pt;
     color: #00CDFF;
@@ -280,7 +279,7 @@
   }
   .frontTitle {
     position: absolute;
-    top: 0; 
+    top: 0;
     padding: 0 140px;
     font-size: 5.15vmax;
     color: #00CDFF;
@@ -311,7 +310,7 @@
     }
     .sizeImgBack {
       left: 0;
-    
+
     }
     .sizeImg {
       width: 100%;
@@ -326,7 +325,7 @@
     }
     .frontTitle {
       position: absolute;
-      top: 85px; 
+      top: 85px;
       padding: 0 55px;
       font-size: 100pt;
       color: #00CDFF;

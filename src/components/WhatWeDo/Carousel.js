@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import style from "./Carousel.css";
+import gstyle from '../global/styles.css'
 import ImgCustom1 from "../../../public/what-we-do-assets/photoCat.png"
 import ImgCustom2 from "../../../public/what-we-do-assets/photoCustom2.png"
 import ImgCustom3 from "../../../public/what-we-do-assets/photoCat.png"
@@ -73,7 +74,7 @@ class Carousel extends Component {
   "Another cat", "Last one !"];
 
     return (<div>
-      <div className={style.topTitle + " " + style.content + " " + style.size1}>CUSTOM WORK</div>
+      <div className={style.topTitle + " " + gstyle.content + " " + gstyle.fn_size_2}>CUSTOM WORK</div>
       <div className={style.conteiner + " " + style.content__slider}>
 
         <div className={style.left}>
@@ -90,11 +91,11 @@ class Carousel extends Component {
 
         <div className={style.right + " " + style.content__tablet}>
           <div className={style.carouselconteiner}>
-            <div className={style.customWorkTitle + " " + style.size1}>
+            <div className={style.customWorkTitle + " " + gstyle.fn_size_2}>
               CUSTOM WORK
             </div>
             <div className={style.flexNoWrap}>
-              <div className={style.customWorkSubTitle + " " + style.size3}>
+              <div className={style.customWorkSubTitle + " " + gstyle.fn_size_4}>
                 <Wrapper>
                   <CarouselContainer sliding={ this.state.sliding } direction={this.state.direction}>
                     {
@@ -109,12 +110,12 @@ class Carousel extends Component {
             </div>
 
             <div className={style.customWorkPartLeft + " " + style.cleftMenu}>
-              <div className={style.size2}>BWIN PARTY</div>
-              <div className={style.size2}>ROULETTE</div>
-              <div className={style.size2}>BWIN PARTY</div>
-              <div className={style.size2}>ROULETTE</div>
+              <div className={gstyle.fn_size_3}>BWIN PARTY</div>
+              <div className={gstyle.fn_size_3}>ROULETTE</div>
+              <div className={gstyle.fn_size_3}>BWIN PARTY</div>
+              <div className={gstyle.fn_size_3}>ROULETTE</div>
             </div>
-            <div className={style.customWorkPartRight + " " + style.crightMenu + " " + style.size2}>
+            <div className={style.customWorkPartRight + " " + style.crightMenu + " " + gstyle.fn_size_3}>
               <div className={this.state.position === 3
                   ? style.active
                   : ""}>WORD SIRES OF POKER</div>
@@ -132,10 +133,10 @@ class Carousel extends Component {
 
         </div>
         <div className={style.nav}>
-          <div className={style.leftBtn + " " + style.size4} onClick={ this.nextSlide}>
+          <div className={style.leftBtn + " " + gstyle.fn_size_5} onClick={ this.nextSlide}>
             <span className={style.pointer}>Next<span className="fa fa-caret-right"/></span>
           </div>
-          <div className={style.rightBtn + " " + style.size4} onClick={ this.prevSlide}>
+          <div className={style.rightBtn + " " + gstyle.fn_size_5} onClick={ this.prevSlide}>
             <span className={style.pointer}><span className="fa fa-caret-left"/>Back</span>
           </div>
         </div>

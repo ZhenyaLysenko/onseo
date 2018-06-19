@@ -14,6 +14,7 @@ const contentStyle = {
   border: "none",
   marginLeft: "0",
 };
+
 class Header extends Component {
   constructor(props) {
     super(props);
@@ -59,7 +60,7 @@ class Header extends Component {
                     <div className={open ? style.burgerMenuOpen : style.burgerMenu }>
                       <div className={style.bar1} key="b1" />
                       <div className={style.bar2} key="b2" />
-                      <div className={style.bar3} key="b3" /> 
+                      <div className={style.bar3} key="b3" />
                     </div>
                   }>
                   {close =>
@@ -151,7 +152,7 @@ class Header extends Component {
                               duration={500}>
                               Contacts
                             </Link>
-                          </li> 
+                          </li>
                       </ul>
                     </div>}
                 </Popup>
@@ -160,7 +161,7 @@ class Header extends Component {
                     <a href="#">
                       <img className={style.Brand} src={iconOnseo} alt="Onseo" />
                     </a>
-                
+
             </div>
             <div className="col-1">
               <div className={style.search}>

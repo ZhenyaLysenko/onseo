@@ -1,0 +1,62 @@
+.fn_size_1 {
+  font-size: 17.14VW;
+}
+
+.fn_size_2 {
+  font-size: 5.65vmax;
+}
+
+.fn_size_3 {
+  font-size: 2.08vmax;
+}
+
+.fn_size_4 {
+  font-size: 1.25vmax;
+}
+
+.fn_size_5 {
+  font-size: 1.25vmax;
+}
+
+.fn_size_6 {
+  font-size: 1.14vmax;
+}
+
+.content {
+  padding: 0 70px;
+}
+
+@media (min-width: 740px) and (max-width: 1199px) {
+
+  .fn_size_1 {
+    font-size: 22.14VW;
+  }
+  .fn_size_2 {
+    font-size: 7.65VW;
+  }
+  .content {
+    padding: 0 45px;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 0 25px;
+  }
+  .fn_size_1 {
+    font-size: 22.14VW;
+  }
+  .fn_size_2 {
+    font-size: 7.65VW;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content {
+    padding: 0 10px;
+  }
+  .fn_size_2 {
+    font-size: 7.65VW;
+  }
+}

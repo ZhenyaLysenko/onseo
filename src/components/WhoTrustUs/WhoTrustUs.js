@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import style from "./WhoTrustUs.css";
+import gstyle from '../global/styles.css';
 import styled from 'styled-components';
 import img1 from "../../../public/who-trust-us-assets/1.png"
 import img2 from "../../../public/who-trust-us-assets/2.png"
@@ -27,15 +28,15 @@ const Item = styled.div `
 
 const WhoTrustUs = () => (<div>
   <div className={style.title}>
-    <div className={style.font250}>WHO TRUST US</div>
-    <div className={style.content}>
-      <div className={style.frontTitle + " " + style.size1}>WHO TRUST US</div>
-      <div className={style.frontCentr + " " + style.size2}>All Aspects Of<br/>Gaming Development</div>
-      <div className={style.frontBotton + " " + style.size3}>Real Money Gaming</div>
+    <div className={gstyle.fn_size_1}>WHO TRUST US</div>
+    <div className={gstyle.content}>
+      <div className={style.frontTitle + " " + gstyle.fn_size_2}>WHO TRUST US</div>
+      <div className={style.frontCentr + " " + gstyle.fn_size_4}>All Aspects Of<br/>Gaming Development</div>
+      <div className={style.frontBotton + " " + gstyle.fn_size_4}>Real Money Gaming</div>
     </div>
   </div>
 
-  <div className={style.content}>
+  <div className={gstyle.content}>
   <Carousel>
     <Item>
       <img className={style.icon} src={img1} alt="1"/>

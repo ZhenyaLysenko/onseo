@@ -1,27 +1,3 @@
-.size1 {
-  font-size: 5.65vmax;
-}
-
-.size2 {
-  font-size: 2.08vmax;
-}
-
-.size3 {
-  font-size: 1.25vmax;
-}
-
-.size4 {
-  font-size: 1.25vmax;
-}
-
-.size5 {
-  font-size: 1.14vmax;
-}
-
-.content {
-  padding: 0 70px;
-}
-
 .contentImg {
   padding: 0 70px;
 }
@@ -63,7 +39,7 @@
 
 .frontTitle {
   position: absolute;
-  top: 70px;
+  top: 5vw;
   color: #00CDFF;
   font-family: BebasNenuBold;
 }
@@ -97,9 +73,7 @@
   flex: 0 1 100%;
   text-align: left;
 }
-.font250 {
-  font-size: 270px;
-}
+
 .flex1col .size3 {
   line-height: 170%;
   font-weight: bold;
@@ -159,9 +133,7 @@
     margin-top: 15px;
   }
 
-  .content {
-    padding: 0 45px;
-  }
+
   .contentImg {
     padding: 0;
   }
@@ -169,7 +141,7 @@
     align-items: flex-start;
   }
   .frontTitle {
-    top: 0px;
+    top: 5vw;
     padding: 0 45px;
   }
   .space {
@@ -178,9 +150,7 @@
   .customWorkTitle {
     display: none;
   }
-  .font250 {
-    font-size: 22.14VW;
-  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -240,10 +210,6 @@
   }
   .frontTitle {
     display: block;
-    top: 0;
-    font-size: 4vmax;
-  }
-  .font250 {
-    font-size: 22.14VW;
+    top: 4vw;
   }
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const CarouselContainer = styled.div `
   display: flex;
-  max-height: 550px;
+  max-height: 510px;
   transition: ${(props) => props.sliding ? 'none' : 'transform 1s ease'};
   transform: ${(props) => {
     if (!props.sliding) return 'translateX(calc(-27%))';

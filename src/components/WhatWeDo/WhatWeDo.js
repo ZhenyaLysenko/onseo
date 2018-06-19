@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 import {Grid, Row, Col} from 'react-bootstrap';
 import styled from 'styled-components';
 import Carousel from './Carousel';
-import Footer from './Footer';
 import style from "./WhatWeDo.css";
+import gstyle from '../global/styles.css';
 
 import Icon1 from "../../../public/what-we-do-assets/icon1.png"
 import Icon2 from "../../../public/what-we-do-assets/icon2.png"
@@ -23,13 +23,13 @@ const Item = styled.img `
 
 const WhatWeDo = () => (<div>
   <div className={style.title}>
-    <div className={style.frontTitle + " " + style.content + " " + style.size1}>WHAT WE DO</div>
-    <span className={style.font250}>WHAT WE DO</span>
+    <div className={style.frontTitle + " " + gstyle.content + " " + gstyle.fn_size_2}>WHAT WE DO</div>
+    <span className={gstyle.fn_size_1}>WHAT WE DO</span>
   </div>
 
   <div className={style.colConteiner}>
 
-    <div className={style.left + " " + style.bebasNenuBold + " " + style.content + " " + style.size1}>
+    <div className={style.left + " " + style.bebasNenuBold + " " + gstyle.content + " " + gstyle.fn_size_2}>
       SOCIAL AND
       <br/>
       FREE2PLAY GAMES
@@ -55,13 +55,13 @@ const WhatWeDo = () => (<div>
 
   <div className={style.space}></div>
 
-  <div className={style.conteiner + " " + style.content}>
+  <div className={style.conteiner + " " + gstyle.content}>
     <div className={style.flex1col}>
-      <div className={style.bebasNenuBold + " " + style.size1}>OUR OWN PRODUCTS</div>
-      <div className={style.proximaNova + " " + style.size3}>Developing Technologies That Accelerate<br/>Game Creation and Mone</div>
+      <div className={style.bebasNenuBold + " " + gstyle.fn_size_2}>OUR OWN PRODUCTS</div>
+      <div className={style.proximaNova + " " + gstyle.fn_size_4}>Developing Technologies That Accelerate<br/>Game Creation and Mone</div>
     </div>
   </div>
-  <div className={style.conteiner + " " + style.content}>
+  <div className={style.conteiner + " " + gstyle.content}>
     <div className={style.leftNotFix}>
       <div className={style.sconteiner + " " + style.bg}>
 
@@ -70,17 +70,17 @@ const WhatWeDo = () => (<div>
           <img className={style.icon} src={Icon1} alt="1"/>
         </div>
         <div className={style.cright + " " + style.bg3}>
-          <div className={style.bebasNenuBold + " " + style.size3}>Casino Gaming Platform</div>
-          <div className={style.proximaNova + " " + style.size4}>Highly available and configurable platform for casino games providing significant time to market acceleration for game production</div>
+          <div className={style.bebasNenuBold + " " + gstyle.fn_size_4}>Casino Gaming Platform</div>
+          <div className={style.proximaNova + " " + gstyle.fn_size_5}>Highly available and configurable platform for casino games providing significant time to market acceleration for game production</div>
         </div>
 
         <div className={style.cleft}>
           <img className={style.icon} src={Icon3} alt="1"/>
         </div>
         <div className={style.cright}>
-          <div className={style.bebasNenuBold + " " + style.size3}>Artificial Intelligence
+          <div className={style.bebasNenuBold + " " + gstyle.fn_size_4}>Artificial Intelligence
           </div>
-          <div className={style.proximaNova + " " + style.size4}>
+          <div className={style.proximaNova + " " + gstyle.fn_size_5}>
             <p>Deep learning algorithms for gaming media buying and multi-level data analysis features.</p>
 
             Technology to predict the “opponents” behavior on a global scale and optimization of customers’ campaigns</div>
@@ -95,18 +95,18 @@ const WhatWeDo = () => (<div>
           <img className={style.icon} src={Icon2} alt="1"/>
         </div>
         <div className={style.cright}>
-          <div className={style.bebasNenuBold + " " + style.size3}>Social Platform
+          <div className={style.bebasNenuBold + " " + gstyle.fn_size_4}>Social Platform
           </div>
-          <div className={style.proximaNova + " " + style.size4}>Easily scalable and customizable platform. Deep integration with social networks. Many common game features embedded into the platform. Allows focus on game creation vs common features</div>
+          <div className={style.proximaNova + " " + gstyle.fn_size_5}>Easily scalable and customizable platform. Deep integration with social networks. Many common game features embedded into the platform. Allows focus on game creation vs common features</div>
         </div>
 
         <div className={style.cleft}>
           <img className={style.icon4} src={Icon4} alt="1"/>
         </div>
         <div className={style.cright}>
-          <div className={style.bebasNenuBold + " " + style.size3}>Business Intelligence
+          <div className={style.bebasNenuBold + " " + gstyle.fn_size_4}>Business Intelligence
           </div>
-          <div className={style.proximaNova + " " + style.size4}>Complete BI and Analytics package optimized to gain valuable insights from gaming data, increase revenue, improve retention and decrease churn</div>
+          <div className={style.proximaNova + " " + gstyle.fn_size_5}>Complete BI and Analytics package optimized to gain valuable insights from gaming data, increase revenue, improve retention and decrease churn</div>
         </div>
 
       </div>
@@ -114,7 +114,6 @@ const WhatWeDo = () => (<div>
   </div>
 
   <div className={style.space}></div>
-  <Footer/>
 
 </div>);
 
